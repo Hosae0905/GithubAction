@@ -2,7 +2,7 @@ name: CI-CD
 on:
   push:
     branches:
-    - main
+      - main
 
 env:
   S3_BUCKET_NAME: hosae-test-bucket
@@ -33,7 +33,7 @@ jobs:
       - name: Make zip file
         run: zip -r ./$GITHUB_SHA .
         shell: bash
-      
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
