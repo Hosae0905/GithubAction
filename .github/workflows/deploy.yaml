@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  AWS_REGION: ap-northeast-2
+  AWS_REGION: ap-northeast-2c
   S3_BUCKET_NAME: hosae-test-bucket
   CODE_DEPLOY_APPLICATION_NAME: CODE-DEPLOY-TEST
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: CODE-DEPLOY-GROUP
